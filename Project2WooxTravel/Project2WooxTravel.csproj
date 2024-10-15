@@ -127,10 +127,12 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
+    <Compile Include="Areas\Admin\Controllers\AdminAreaRegistration.cs" />
     <Compile Include="Areas\Admin\Controllers\AdmninLayoutController.cs" />
+    <Compile Include="Areas\Admin\Controllers\CategoryController.cs" />
     <Compile Include="Context\TravelContext.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Entities\Admin.cs" />
     <Compile Include="Entities\Category.cs" />
     <Compile Include="Entities\Contact.cs" />
     <Compile Include="Entities\Destination.cs" />
@@ -145,6 +147,10 @@
     <Compile Include="Migrations\202410151229465_mig2.cs" />
     <Compile Include="Migrations\202410151229465_mig2.Designer.cs">
       <DependentUpon>202410151229465_mig2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202410151430025_mig3.cs" />
+    <Compile Include="Migrations\202410151430025_mig3.Designer.cs">
+      <DependentUpon>202410151430025_mig3.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -604,6 +610,12 @@
     <Content Include="kaiadmin-lite-1.2.0\LICENSE" />
     <Content Include="kaiadmin-lite-1.2.0\README.md" />
     <Content Include="Areas\Admin\Views\AdmninLayout\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\AdmninLayout\PartialHead.cshtml" />
+    <Content Include="Areas\Admin\Views\AdmninLayout\PartialSidebar.cshtml" />
+    <Content Include="Areas\Admin\Views\AdmninLayout\PartialNavbar.cshtml" />
+    <Content Include="Areas\Admin\Views\AdmninLayout\PartialFooter.cshtml" />
+    <Content Include="Areas\Admin\Views\AdmninLayout\PartialScript.cshtml" />
+    <Content Include="Areas\Admin\Views\Category\CategoryList.cshtml" />
     <None Include="Scripts\jquery-3.7.0.intellisense.js" />
     <Content Include="Scripts\jquery-3.7.0.js" />
     <Content Include="Scripts\jquery-3.7.0.min.js" />
@@ -669,6 +681,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202410151229465_mig2.resx">
       <DependentUpon>202410151229465_mig2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202410151430025_mig3.resx">
+      <DependentUpon>202410151430025_mig3.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
