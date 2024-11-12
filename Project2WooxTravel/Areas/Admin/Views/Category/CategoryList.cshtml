@@ -5,7 +5,7 @@
     Layout = "~/Areas/Admin/Views/AdmninLayout/Index.cshtml";
 }
 
-<div class="container">
+<div class="container" id="categoryWoox">
     <div class="page-inner">
         <div class="page-header">
             <h3 class="fw-bold mb-3">Tables</h3>
@@ -51,14 +51,14 @@
                                     <tr>
                                         <td>@item.CategoryId</td>
                                         <td>@item.CategoryName</td>
-                                        <td><a href="#" class="btn btn-danger">Sil</a></td>
-                                        <td><a href="#" class="btn btn-warning">Güncelle</a></td>
+                                        <td><a href="/Admin/Category/DeleteCategory/@item.CategoryId" class="btn btn-danger">Sil</a></td>
+                                        <td><a href="/Admin/Category/UpdateCatgory/@item.CategoryId" class="btn btn-warning">Güncelle</a></td>
                                     </tr>
                                 }
                             </tbody>
                         </table>
 
-                        <a href="#" class="btn btn-success">Yeni Kategori Girişi</a>
+                        <a href="/Admin/Category/CreateCategory/" class="btn btn-success">Yeni Kategori Girişi</a>
                     </div>
                 </div>
             </div>

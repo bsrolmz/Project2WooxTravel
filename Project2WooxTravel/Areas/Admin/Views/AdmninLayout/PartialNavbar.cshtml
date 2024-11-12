@@ -8,6 +8,7 @@
                          alt="navbar brand"
                          class="navbar-brand"
                          height="20" />
+                    <a href="~/Areas/Admin/Controllers/CategoryController.cs"></a>
                 </a>
                 <div class="nav-toggle">
                     <button class="btn btn-toggle toggle-sidebar">
@@ -73,8 +74,10 @@
                             aria-labelledby="messageDropdown">
                             <li>
                                 <div class="dropdown-title d-flex justify-content-between align-items-center">
-                                    Messages
-                                    <a href="#" class="small">Mark all as read</a>
+                                    Mesajlar
+                                    <a href="#" class="small">
+                                        Tümünü okundu olarak işaretle
+                                    </a>
                                 </div>
                             </li>
                             <li>
@@ -130,8 +133,8 @@
                                 </div>
                             </li>
                             <li>
-                                <a class="see-all" href="javascript:void(0);">
-                                    See all messages<i class="fa fa-angle-right"></i>
+                                <a class="see-all" href="@Url.Action("Inbox","Message")">
+                                  Tüm Mesajları Gör<i class="fa fa-angle-right"></i>
                                 </a>
                             </li>
                         </ul>
@@ -320,11 +323,7 @@
                                 <a class="dropdown-item" href="#">Logout</a>
                             </li>
             </div>
-            </ul>
-            </li>
-            </ul>
-
     </div>
-    </nav>
+    
     <!-- End Navbar -->
 </div>

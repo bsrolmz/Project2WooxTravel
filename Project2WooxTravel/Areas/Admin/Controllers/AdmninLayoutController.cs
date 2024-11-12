@@ -33,5 +33,9 @@ namespace Project2WooxTravel.Areas.Admin.Controllers
         {
             return PartialView();
         }
+        public PartialViewResult PartialNavbarMessage()
+        {
+            return PartialView();   
+        }
     }
 }

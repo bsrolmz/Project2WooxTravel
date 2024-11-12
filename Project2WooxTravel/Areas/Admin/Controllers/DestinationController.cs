@@ -8,10 +8,11 @@ using Project2WooxTravel.Entities;
 
 namespace Project2WooxTravel.Areas.Admin.Controllers
 {
-    [Authorize]
+   
     public class DestinationController : Controller
     {
         TravelContext context = new TravelContext();
+        [Authorize]
         public ActionResult DestinationList()
         {
             var values = context.Destinations.ToList();
